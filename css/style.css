@@ -1,0 +1,853 @@
+* 
+{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: ' 2', sans-serif;
+  text-transform: capitalize;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+/* --------------------- Awal Css baris scrollbar style ----------------------------------- */
+  ::-webkit-scrollbar{
+    width: 12px;
+  }
+
+  ::-webkit-scrollbar-thumb{
+    background:rgb(0, 0, 0);
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+  ::-webkit-scrollbar-thumb:hover{
+    background:rgb(255,255, 0);
+  }
+/* --------------------- Akhir Css baris scrollbar style ----------------------------------- */
+html 
+{
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+  
+body 
+{
+  overflow-x: hidden;
+}
+/*--------------------- Awal Css Baris Bagian Home+header+navbar -------------------------*/
+#header 
+{
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 2rem 4rem;
+  z-index: 1000;
+}  
+
+#header .fa-outdent 
+{
+  font-size: 40px;
+  z-index: 10000;
+  color: #FFF200;
+  cursor: pointer;
+  display: none;
+}
+  
+#header .logo img 
+{
+  height: 75px;
+}
+  
+#header nav ul 
+{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  list-style: none;  
+}
+  
+#header nav ul li 
+{
+  margin-right: 4rem;
+}
+  
+#header nav ul li a 
+{
+  color: #fff;
+  font-size: 2rem;
+  text-decoration: none;
+}
+  
+#header nav ul li a:hover 
+{
+  color: #FFF200;
+  text-decoration: none;
+  text-align: left;
+}
+  
+.header-active 
+{
+  background: rgb(29, 28, 28);
+  height: 65px;
+  -webkit-box-shadow: .2rem 0 .5rem #000;
+          box-shadow: .2rem 0 .5rem #000;
+}
+  
+.header-active nav ul 
+{
+  margin: 0;
+}
+  
+#home 
+{
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6)));
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+  position:relative;
+}
+
+#home .content h1 
+{
+  margin-left: 55px;
+  font-size: 5rem;
+  font-family: 'Caveat', cursive;
+  font-weight: bolder;
+  text-shadow: .1rem .1rem .3rem #333;
+  color: #FFF200;
+}
+  
+#home .content h2 
+{
+  margin-left: 55px;
+  font-size: 30px;
+  font-family: 'Caveat', cursive;
+  font-weight: bolder;
+  text-shadow: .1rem .1rem .3rem #333;
+  color: #fff;
+}
+  
+#home .content p 
+{
+  font-family: 'exo', sans-serif;
+  margin-left: 55px;
+  font-size: 16px;
+  color: #ccc;
+}
+  
+#home .content button 
+{
+  margin-left: 55px;
+  outline: none;
+  border: none;
+  border-radius: 5rem;
+  color: #333;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  letter-spacing: .2rem;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  height: 4rem;
+  width: 14rem;
+  background: #fff;
+}
+  
+#home .content button::before 
+{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #FFF200;
+  height: 100%;
+  width: 0%;
+  -webkit-transition: .2s;
+  transition: .2s;
+  z-index: -1;
+}
+  
+#home .content button:hover::before 
+{
+  width: 100%;
+}
+  
+#home .video-container 
+{
+  margin-left: -8px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: -1;
+}
+  
+#home .video-container .vid 
+{
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  -o-object-fit: cover;
+    object-fit: cover;
+  display: none;
+}
+  
+#home .video-container .vid1 
+{
+  display: block;
+}
+   
+.fa-times 
+{
+  -webkit-transform: skew(-180deg) rotate(180deg);
+  transform: skew(-180deg) rotate(180deg);
+  -moz-transform: skew(-180deg) rotate(180deg);
+  -ms-transform: skew(-180deg) rotate(180deg);
+  -o-transform: skew(-180deg) rotate(180deg);
+}
+  
+  @media (max-width: 768px) 
+  {
+    html 
+    {
+      font-size: 50%;
+    }
+    #header .fa-outdent 
+    {
+      display: block;
+    }
+    #header nav 
+    {
+      position: fixed;
+      top: 0;
+      left: -120%;
+      height: 100vh;
+      width: 35rem;
+      background: #000;
+    }
+    #header nav ul 
+    {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: column;
+              flex-flow: column;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      height: 100%;
+    }
+    #header nav ul li 
+    {
+      margin: 2rem 0;
+    }
+    #header nav ul li a 
+    {
+      font-size: 3.5rem;
+      border-radius: 5rem;
+    }
+    #header nav ul li a:hover 
+    {
+      padding: .5rem 7.5rem;
+      color: #333;
+      background: #FFF200;
+    }
+    #header .nav-toggle 
+    {
+      left: 0%;
+    }
+  }
+/*--------------------- Akhir Css Baris Bagian Home+header+navbar -------------------------*/
+
+/*--------------------- Awal Css Baris Bagian About -------------------------*/
+#about .heading h1 
+{
+  font-size: 40px;
+  color: #000;
+  padding-top: 80px;
+  margin-bottom: 20px;
+}
+  
+#about .heading h1 span 
+{
+  color: #FFF200;
+}
+
+#about .image img
+{
+  border: 3px solid;
+  box-shadow: -2px  2px 20px yellow;
+  margin-bottom: 10px;   
+}
+#about .image p
+{
+  font-size: 15px;
+  text-shadow: 1px 1px 2px yellow;
+}
+  
+#about .content 
+{
+  margin: auto;
+}
+  
+#about .content p 
+{
+  font-size: 15px;
+}
+  
+#about .content button 
+{
+  border: none;
+  border-radius: 10px;
+  color: #333;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: capitalize;
+  cursor: pointer;
+  position: relative;
+  margin-bottom: 20px;
+  z-index: 1;
+  overflow: hidden;
+  height: 30px;
+  width: 140px;
+  background: #333;
+  color: #fff;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+  
+#about .content button::before 
+{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #FFF200;
+  height: 100%;
+  width: 0%;
+  -webkit-transition: .2s;
+  transition: .2s;
+  z-index: -1;
+}
+  
+#about .content button:hover::before 
+{
+  width: 100%;
+}
+  
+#about .content button:hover 
+{
+  color: #333;
+}
+
+/* ------------------------About-baris colom comentar------------------------------ */
+#about .comen
+{
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-bottom: 50px;
+}
+
+#about .comen .cm {
+  font-size: 40px;
+  color: #000;
+}
+#about .comen .cm span{
+  color: #FFF200;
+  text-decoration: underline;
+}
+#about .comen .box1{
+    height: 130px;
+    width: 308px;
+    box-shadow: 2px 2px 30px rgb(225, 255, 0);
+    background-color: #fff;
+    padding: 20px;
+    margin: 15px;
+}
+
+#about .comen .box1 .profile {
+  display:flex;
+  align-items: center;
+}
+
+#about .comen .box1 .pf-img{
+  width: 50px;
+  height:50px;
+  border-radius: 50%;
+  overflow:hidden;
+  margin-right: 10px;
+}
+#about .comen .box1 .pf-img img{
+  width: 100%;
+  height:100%;
+  object-fit: cover;
+  object-position: center;
+}
+#about .comen .box1 .name-user
+{
+  display:flex;
+  flex-direction: column;
+  font-size: 15px;
+}
+#about .comen .box1 .bintang
+{
+  margin-left: 40px;
+  color: orange;
+}
+
+#about .comen .box1 .reviews {
+  font-size: 12px;
+}
+/*--------------------- Akhir Css Baris Bagian About -------------------------*/
+
+
+/*--------------------- Awal Css Baris Bagian Menu -------------------------*/
+#menu 
+{
+  background: #000;
+  min-height: 100vh;
+  padding-bottom: 50px;
+}
+
+#menu .heading h1 
+{
+  font-size: 4rem;
+  color: #000;
+  padding-top: 70px;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+#menu .heading h1 span 
+{
+  color: #FFF200;
+}
+
+#menu .heading p 
+{
+  color: #ccc;
+  font-size: 2rem;
+}
+
+#menu .card-container 
+{
+  width: 95%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#menu .card-container .card 
+{
+  height: 40rem;
+  width: 30rem;
+  background: #fff;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+}
+
+  @media (max-width: 768px){
+    #menu .card-container .card {
+      height: 80%;
+      width: 70%;
+      background: #fff;
+      padding: 10px;
+      margin: 10px;
+      text-align: center;
+    }
+  } 
+
+#menu .card-container .card img 
+{
+  height: 50%;
+  width: auto;
+  object-fit: cover;
+}
+
+#menu .card-container .card h1
+{
+  font-size: 20px;
+ 
+}
+
+#menu .card-container .card p 
+{
+  font-size: 15px;
+}
+
+#menu .card-container .card p2 
+{
+  font-size: 15px;
+}
+
+#menu .card-container .card p i
+{
+  color: orange;
+ 
+}
+
+#menu .card-container .card button 
+{
+  outline: none;
+  border: none;
+  border-radius: 5rem;
+  color: #333;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  letter-spacing: .2rem;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  height: 35px;
+  width: 14rem;
+  background: #333;
+  color: #fff;
+}
+
+#menu .card-container .card button::before 
+{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #FFF200;
+  height: 100%;
+  width: 0%;
+  -webkit-transition: .2s;
+  transition: .2s;
+  z-index: -1;
+}
+
+#menu .card-container .card button:hover::before 
+{
+  width: 100%;
+}
+
+#menu .card-container .card button:hover 
+{
+  color: #333;
+}
+
+#menu .card-container .card:hover 
+{
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+/*--------------------- Akhir Css Baris Bagian Menu -------------------------*/
+
+/*--------------------- Awal Css Baris Bagian Maps -------------------------*/
+
+#maps .heading h1
+{
+  font-size: 40px;
+  color: #000;
+  padding-top: 80px;
+  margin-bottom: 20px;
+}
+
+#maps .heading h1 span 
+{
+  color: #FFF200;
+}
+
+#maps .container-maps {
+  margin-left: 50%;
+}
+
+#maps .gallery img{ 
+  margin-top: 30px;
+  margin-bottom: 20px;
+  box-shadow: 2px 2px 30px rgb(225, 255, 0);
+  padding:25px;
+  width: 180px;
+  filter: grayscale(80%);
+  -webkit-filter: grayscale(80%);
+  transition:0.5s;
+  -webkit-transition:0.5s;
+  -moz-transition:0.5s;
+  -ms-transition:0.5s;
+  -o-transition:0.5s;
+}
+  @media (max-width: 375px){
+    #maps .gallery img {
+      width: 150px;
+    }
+  }
+
+#maps .gallery img:hover{
+  filter: grayscale(0);
+  -webkit-filter: grayscale(0);
+  transform:scale(1.3);
+  -webkit-transform:scale(1.3);
+  -moz-transform:scale(1.3);
+  -ms-transform:scale(1.3);
+  -o-transform:scale(1.3);
+}
+
+#maps .peta iframe{
+  margin-top: 20px;
+  margin-left: 50px;
+  box-shadow: 2px 2px 30px rgb(225, 255, 0);
+}
+
+  @media (max-width: 768px) {
+    #maps .peta iframe{
+      width:400px;
+      height: 400px;
+    }
+  }
+   @media (max-width: 375px){
+    #maps .peta iframe{
+      width:250px;
+      height: 250px;
+      margin-left: 5%;
+    }
+   }
+/*--------------------- Akhir Css Baris Bagian Maps -------------------------*/
+
+/*--------------------- Awal Css Baris Bagian contact us -------------------------*/
+
+#contact .heading h1
+{
+  font-size: 40px;
+  color: #000;
+  padding-top: 80px;
+  margin-bottom: 20px;
+}
+
+#contact .heading h1 span 
+{
+  color: #FFF200;
+}
+
+#contact .container-contact{
+  margin-top: 5%;
+}
+
+#contact .container-contact .card 
+{
+  margin-left: 40%;
+  height: 400px;
+  width: 300px;
+  background: #fff;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 2px 2px 30px rgb(225, 255, 0);
+  border: 2px solid;
+}
+  @media (max-width: 768px){
+    #contact .container-contact .card {
+      margin-left: 35%;
+    }
+  }
+  @media (max-width: 700px){
+    #contact .container-contact .card {
+      margin-left: 20%;
+      margin-top: 8%;
+      margin-bottom: 15%;
+    }
+  }
+  @media (max-width: 375px){
+    #contact .container-contact .card {
+      margin-left: 8%;
+      margin-top: 8%;
+      margin-bottom: 25%;
+    }
+  }
+#contact .container-contact p {
+  border: 3px solid;
+  font-size: 15px;
+  background: rgb(248, 233, 233);
+}
+#contact .container-contact p.p1 {
+  width: 250px;
+  margin-left: 12px ;
+}
+#contact .container-contact p.p2 {
+  width: 150px;
+  margin-left: 80px ;
+  margin-top: -40px;
+}
+#contact .container-contact p.p3 {
+  width: 150px;
+  margin-left: 80px ;
+  margin-top: -40px;
+}
+
+#contact .card .fa-envelope
+{
+  font-size: 60px;
+}
+
+#contact .card .fa-instagram
+{
+  font-size: 60px;
+  letter-spacing: 250px;
+  margin-top: 25px;
+}
+
+#contact .card .fa-facebook-square
+{
+  font-size: 60px;
+  letter-spacing: 250px;
+  margin-top: 20px;
+}
+
+#contact .card img
+{
+  margin-left: 25%;
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+}
+
+#contact .card h1
+{
+  font-size: 15px;
+  background-color: #000;
+  padding: 10px;
+  color: #ffffff;
+}
+
+#contact .card span 
+{
+  color: #FFF200;
+}
+
+#contact .card button 
+{
+  border: none;
+  border-radius: 10px;
+  color: #333;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: capitalize;
+  cursor: pointer;
+  position: relative;
+  margin:12%;
+  z-index: 1;
+  overflow: hidden;
+  height: 30px;
+  width: 140px;
+  background: #333;
+  color: #fff;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+#contact .card button::before 
+{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #FFF200;
+  height: 100%;
+  width: 0%;
+  -webkit-transition: .2s;
+  transition: .2s;
+  z-index: -1;
+  -moz-transition: .2s;
+  -ms-transition: .2s;
+  -o-transition: .2s;
+}
+  
+#contact .card button:hover::before 
+{
+  width: 100%;
+}
+  
+#contact .card button:hover 
+{
+  color: #333;
+}
+
+/*--------------------- Akhir Css Baris Bagian contact us -------------------------*/
+
+/*--------------------- Awal Css Baris Bagian footer -------------------------*/
+
+footer
+{
+  background-color: rgb(29, 28, 28);
+  color: #fff;
+  padding: 10px 0px;
+}
+footer .foot img
+{
+  width:125px;
+  height:125px;
+}
+
+footer .foot1
+{
+  margin-top: 1%;
+}
+
+footer .foot1 p{
+  font-size: 11px;
+  margin-top: -5px;
+}
+
+footer span 
+{
+  color: #FFF200;
+}
+
+footer .foot1 h1
+{
+  font-size: 30px;
+}
+
+footer .foot1 i 
+{
+  font-size: 30px;
+  margin-left: 1.5%;
+}
+  @media (max-width: 375px){
+    footer .foot1 i{
+      margin-bottom:10%;
+    }
+    footer .foot1 h1 {
+      font-size: 25px;
+    }
+  }
+
+footer .foot1 i:hover 
+{
+  color:#FFF200;
+} 
+
+/*--------------------- Akhir Css Baris Bagian footer -------------------------*/

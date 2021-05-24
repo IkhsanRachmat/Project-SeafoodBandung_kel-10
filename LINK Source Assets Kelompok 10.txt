@@ -1,0 +1,41 @@
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Source yang di gunakan dalam pembagunan website seafood bandung Kelompok 10 Mentor Kang aswin >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+#========================================#
+|Dev team : 				 |
+| Ikhsan Rachmat - 203040042		 |
+| Nikolas Ramadhan - 203040049		 |
+| Chairunissa Putri Koswara - 203040048	 |
+| Reza Marchyana - 203040079		 |
+| Bintang Yandi Putra - 203040037   	 |
+| Aditya faisal amarullah - 203040106    |
+#========================================#
+
+Tools untuk me resize/ memperkecil ukuran gambar :
+LINK >>> https://onlinejpgtools.com/resize-jpg
+
+LINK Source assets video :
+https://youtu.be/PRdZpuhc5BE
+
+LINK Source font dari google fonts : 
+Exo font >>> https://fonts.google.com/specimen/Exo?query=Exo
+Caveat font >>> https://fonts.google.com/specimen/Caveat?query=Caveat
+
+LINK Source assets foto dari Google image :
+https://www.google.com/search?q=masterchef+juri+png&tbm=isch&ved=2ahUKEwiWiuy6i8HwAhUmHHIKHY_iB5cQ2-cCegQIABAA#imgrc=69r-RRT2N8w3pM&imgdii=Qfw6Hn_azDHJCM
+https://www.google.com/url?sa=i&url=https%3A%2F%2Feverfreshseafood.co%2Fabout%2F&psig=AOvVaw2R54UQBp75VS3oQnOvMj3V&ust=1620804917966000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCLDL3YSPwfACFQAAAAAdAAAAABAX
+https://www.google.com/url?sa=i&url=https%3A%2F%2Fmyeatandtravelstory.wordpress.com%2F2015%2F06%2F02%2Ftraktiran-ultah-di-captains-seafood-bandung%2F&psig=AOvVaw1Pbp6c5q_JBQ4MUv8LbSsz&ust=1621238696108000&source=images&cd=vfe&ved=0CAMQjB1qFwoTCODag4LfzfACFQAAAAAdAAAAABAP
+https://www.google.com/url?sa=i&url=https%3A%2F%2Ftripasik.com%2Frestoran-seafood-bandung%2F&psig=AOvVaw1Pbp6c5q_JBQ4MUv8LbSsz&ust=1621238696108000&source=images&cd=vfe&ved=0CAMQjB1qFwoTCODag4LfzfACFQAAAAAdAAAAABAa
+https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.timeout.com%2Flondon%2Frestaurants%2Fthe-best-rooftop-restaurants-in-london&psig=AOvVaw2t4_s4h7fBTiSDLqyBqocH&ust=1621239261278000&source=images&cd=vfe&ved=0CAMQjB1qFwoTCJiPi67hzfACFQAAAAAdAAAAABAy
+https://www.google.com/url?sa=i&url=https%3A%2F%2Fforeignpolicy.com%2F2019%2F10%2F18%2Fwealthy-chinese-overturn-national-cuisine-image-fast-cheap%2F&psig=AOvVaw2E66o8TncjR-ziaVb7lAY6&ust=1621240407334000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCJjniLXlzfACFQAAAAAdAAAAABAi
+
+Frame work :
+library untuk icon fontawesome LINK >>> https://fontawesome.com/
+----------------------------------------------------------------------------------------------------
+library untuk css Bootsrap LINK >>> https://getbootstrap.com/docs/5.0/getting-started/introduction/
+----------------------------------------------------------------------------------------------------
+library untuk Jquery LINK >>> https://jquery.com/
+----------------------------------------------------------------------------------------------------
+Jquery lightbox LINK >>> https://lokeshdhakar.com/projects/lightbox2/
+----------------------------------------------------------------------------------------------------
+AOS animasi on scroll library LINK >>> https://michalsnik.github.io/aos/
+----------------------------------------------------------------------------------------------------
+AOS document michalsnik LINK >>> https://github.com/michalsnik/aos
